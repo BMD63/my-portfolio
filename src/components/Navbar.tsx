@@ -13,6 +13,7 @@ const Navbar: React.FC = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  const title ="<Sergei.Chechet/>"
 
   return (
     <nav 
@@ -22,7 +23,7 @@ const Navbar: React.FC = () => {
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <span className="text-xl font-bold text-gray-800 dark:!text-gray-100">Portfolio</span>
+            <span className="text-xl font-bold text-gray-800 dark:!text-gray-100">{title}</span>
           </div>
 
           <div className="hidden md:block">
