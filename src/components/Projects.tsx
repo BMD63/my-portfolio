@@ -7,6 +7,7 @@ interface Project {
   description: string;
   image: string;
   technologies: string[];
+  type: 'pet' | 'commerce';
   liveUrl: string;
   githubUrl: string;
 }
@@ -18,6 +19,7 @@ const projectsData: Project[] = [
     description: 'A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.',
     image: 'https://via.placeholder.com/400x250/4F46E5/FFFFFF?text=E-Commerce',
     technologies: ['React', 'TypeScript', 'Node.js'],
+    type: 'commerce',
     liveUrl: 'https://example.com',
     githubUrl: 'https://github.com'
   },
@@ -27,6 +29,7 @@ const projectsData: Project[] = [
     description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
     image: 'https://via.placeholder.com/400x250/059669/FFFFFF?text=Task+App',
     technologies: ['Vue', 'JavaScript', 'Firebase'],
+    type: 'pet',
     liveUrl: 'https://example.com',
     githubUrl: 'https://github.com'
   },
@@ -36,6 +39,7 @@ const projectsData: Project[] = [
     description: 'A responsive weather dashboard with location-based forecasts, interactive maps, and weather alerts.',
     image: 'https://via.placeholder.com/400x250/DC2626/FFFFFF?text=Weather',
     technologies: ['React', 'TypeScript', 'API'],
+    type: 'pet',
     liveUrl: 'https://example.com',
     githubUrl: 'https://github.com'
   },
@@ -45,6 +49,7 @@ const projectsData: Project[] = [
     description: 'A modern portfolio website built with React and Tailwind CSS, featuring dark mode and smooth animations.',
     image: 'https://via.placeholder.com/400x250/7C3AED/FFFFFF?text=Portfolio',
     technologies: ['React', 'Tailwind CSS', 'TypeScript'],
+    type: 'pet',
     liveUrl: 'https://example.com',
     githubUrl: 'https://github.com'
   },
@@ -54,6 +59,7 @@ const projectsData: Project[] = [
     description: 'A full-featured blog platform with markdown support, commenting system, and SEO optimization.',
     image: 'https://via.placeholder.com/400x250/EA580C/FFFFFF?text=Blog',
     technologies: ['Vue', 'JavaScript', 'Node.js'],
+    type: 'commerce',
     liveUrl: 'https://example.com',
     githubUrl: 'https://github.com'
   },
@@ -63,20 +69,25 @@ const projectsData: Project[] = [
     description: 'An interactive data visualization tool for analyzing and presenting complex datasets with charts and graphs.',
     image: 'https://via.placeholder.com/400x250/0891B2/FFFFFF?text=Data+Viz',
     technologies: ['React', 'D3.js', 'TypeScript'],
+    type: 'pet',
     liveUrl: 'https://example.com',
     githubUrl: 'https://github.com'
   }
 ];
 
 const Projects: React.FC = () => {
-  const [filter, setFilter] = useState<string>('All');
+  const [techFilter, setTechFilter] = useState<string>('All');
+  const [typeFilter, setTypeFilter] = useState<'all' | 'pet' | 'commerce'>('all');
   const [visibleProjects, setVisibleProjects] = useState<number>(6);
 
   const technologies = ['All', 'React', 'Vue', 'TypeScript', 'JavaScript', 'Node.js'];
+  const projectTypes = ['all', 'pet', 'commerce'] as const;
 
-  const filteredProjects = filter === 'All'
-    ? projectsData
-    : projectsData.filter(project => project.technologies.includes(filter));
+  const filteredProjects = projectsData.filter(project => {
+    const techMatch = techFilter === 'All' || project.technologies.includes(techFilter);
+    const typeMatch = typeFilter === 'all' || project.type === typeFilter;
+    return techMatch && typeMatch;
+  });
 
   const displayedProjects = filteredProjects.slice(0, visibleProjects);
 
@@ -100,14 +111,30 @@ const Projects: React.FC = () => {
           {technologies.map(tech => (
             <button
               key={tech}
-              onClick={() => setFilter(tech)}
+              onClick={() => setTechFilter(tech)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                filter === tech
+                techFilter === tech
                   ? 'bg-blue-600 text-white'
                   : 'bg-white dark:bg-gray-800 text-gray-400 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700'
               }`}
             >
               {tech}
+            </button>
+          ))}
+        </div>
+
+        <div className="flex flex-wrap justify-center gap-2 mb-8">
+          {projectTypes.map(type => (
+            <button
+              key={type}
+              onClick={() => setTypeFilter(type)}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                typeFilter === type
+                  ? 'bg-purple-600 text-white'
+                  : 'bg-white dark:bg-gray-800 text-gray-400 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700'
+              }`}
+            >
+              {type.charAt(0).toUpperCase() + type.slice(1)}
             </button>
           ))}
         </div>
