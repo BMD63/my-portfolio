@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
 
         <div className="flex justify-center space-x-6">
           <a
-            href="https://github.com"
+            href="https://https://github.com/BMD63.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
             <Github size={24} />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://https://www.linkedin.com/in/sergei-chechet.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
             <Linkedin size={24} />
           </a>
           <a
-            href="mailto:john@example.com"
+            href="mailto:chechet@mail.ru"
             className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
             <Mail size={24} />

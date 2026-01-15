@@ -32,8 +32,8 @@ const projectsData: Project[] = [
   },
   {
     id: 3,
-    title: 'Weather Dashboard',
-    description: 'A responsive weather dashboard with location-based forecasts, interactive maps, and weather alerts.',
+    title: 'Marketing Platform Dashboard',
+    description: 'A user dashboard for managing marketing programs with comprehensive tools and analytics. Features include campaign creation and scheduling, performance metrics visualization, audience segmentation, budget tracking, and automated reporting with customizable dashboards.',
     image: 'public/projects/staffjet.png',
     technologies: ['React', 'TypeScript', 'API'],
     type: 'pet',
@@ -42,19 +42,19 @@ const projectsData: Project[] = [
   },
   {
     id: 4,
-    title: 'Portfolio Website',
-    description: 'A modern portfolio website built with React and Tailwind CSS, featuring dark mode and smooth animations.',
-    image: 'https://via.placeholder.com/400x250/7C3AED/FFFFFF?text=Portfolio',
+    title: 'Architectural Design Studio Website',
+    description: 'A corporate website for an architectural design studio with integrated features. Features include interactive project cost calculator, blog with portfolio showcase, dynamic landing pages system, project gallery with filtering, and client inquiry forms with CRM integration.',
+    image: '/projects/jsds.png',
     technologies: ['React', 'Tailwind CSS', 'TypeScript'],
     type: 'pet',
-    liveUrl: 'https://example.com',
+    liveUrl: 'jsds.ru',
     githubUrl: 'https://github.com'
   },
   {
     id: 5,
     title: 'Blog Platform',
     description: 'A full-featured blog platform with markdown support, commenting system, and SEO optimization.',
-    image: 'https://via.placeholder.com/400x250/EA580C/FFFFFF?text=Blog',
+    image: 'public/projects/binom.png',
     technologies: ['Vue', 'JavaScript', 'Node.js'],
     type: 'commerce',
     liveUrl: 'https://example.com',
@@ -64,10 +64,10 @@ const projectsData: Project[] = [
     id: 6,
     title: 'Data Visualization Tool',
     description: 'An interactive data visualization tool for analyzing and presenting complex datasets with charts and graphs.',
-    image: 'https://via.placeholder.com/400x250/0891B2/FFFFFF?text=Data+Viz',
+    image: '/projects/poco.png',
     technologies: ['React', 'D3.js', 'TypeScript'],
     type: 'pet',
-    liveUrl: 'https://example.com',
+    liveUrl: 'https://poco-rus.com',
     githubUrl: 'https://github.com'
   }
 ];
