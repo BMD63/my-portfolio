@@ -9,7 +9,7 @@ const contactsData: Contacts = {
     linkedin: 'https://www.linkedin.com/in/sergei-chechet',
     git: 'https://github.com/BMD63',
     mail: 'chechet@mail.ru',
-    telegram: '@s_chechet',
+    telegram: 's_chechet',
 }
 
 export default contactsData;

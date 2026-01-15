@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Github, Linkedin, Mail, Send, MessageCircle } from 'lucide-react';
+import contactsData from '../constants/contacts';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -49,14 +50,14 @@ const Contact: React.FC = () => {
 
             <div className="space-y-4">
               <a
-                href="mailto:john@example.com"
+                href={`mailto:${contactsData.mail}`}
                 className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
                 <Mail size={20} className="mr-3" />
-                john@example.com
+                chechet@mail.ru
               </a>
               <a
-                href="https://linkedin.com/in/johndoe"
+                href={contactsData.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -65,7 +66,7 @@ const Contact: React.FC = () => {
                 LinkedIn Profile
               </a>
               <a
-                href="https://github.com/johndoe"
+                href={contactsData.git}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -74,7 +75,7 @@ const Contact: React.FC = () => {
                 GitHub Profile
               </a>
               <a
-                href="https://t.me/johndoe"
+                href={`https://t.me/${contactsData.telegram}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"

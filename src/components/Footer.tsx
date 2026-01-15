@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, MessageCircle, Heart } from 'lucide-react';
+import contactsData from '../constants/contacts';
 
 const Footer: React.FC = () => {
   return (
@@ -14,7 +15,7 @@ const Footer: React.FC = () => {
 
           <div className="flex space-x-6">
             <a
-              href="https://github.com/johndoe"
+              href={contactsData.git}
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -23,7 +24,7 @@ const Footer: React.FC = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com/in/johndoe"
+              href={contactsData.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -32,14 +33,14 @@ const Footer: React.FC = () => {
               <Linkedin size={20} />
             </a>
             <a
-              href="mailto:john@example.com"
+              href={`mailto:${contactsData.mail}`}              
               className="text-gray-400 hover:text-white transition-colors"
               aria-label="Email"
             >
               <Mail size={20} />
             </a>
             <a
-              href="https://t.me/johndoe"
+              href={`https://t.me/${contactsData.telegram}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
