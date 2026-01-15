@@ -69,6 +69,36 @@ const projectsData: Project[] = [
     type: 'pet',
     liveUrl: 'https://poco-rus.com',
     githubUrl: 'https://github.com'
-  }
+  },
+  {
+    id: 7,
+    title: 'Relocation Program Landing Page',
+    description: 'A promotional website for "Vkusno i tochka" employee relocation program with database integration. ',
+    image: '/projects/goroditochka.png',
+    technologies: ['React', 'TypeScript', 'Node.js'],
+    type: 'commerce',
+    liveUrl: 'https://goroditochka.staffjet.ru',
+    githubUrl: 'https://github.com'
+  },
+   {
+    id: 8,
+    title: 'Quiz Module',
+    description: 'An interactive bluffing game module for the "Remember Everything" quiz application. Players submit fake answers alongside real facts, then vote to identify the truth. ',
+    image: 'public/projects/bluffs.png',
+    technologies: ['Vue', 'JavaScript', 'Firebase'],
+    type: 'pet',
+    liveUrl: 'https://bluffs.ru',
+    githubUrl: 'https://github.com'
+  },
+  {
+    id: 9,
+    title: 'Marketing Platform Dashboard',
+    description: 'A user dashboard for managing marketing programs with comprehensive tools and analytics. Features include campaign creation and scheduling, performance metrics visualization, audience segmentation, budget tracking, and automated reporting with customizable dashboards.',
+    image: 'public/projects/staffjet.png',
+    technologies: ['React', 'TypeScript', 'API'],
+    type: 'pet',
+    liveUrl: 'https://staffjet.ru',
+    githubUrl: 'https://github.com'
+  },
 ];
 export default projectsData;
