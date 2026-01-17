@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTelegramPlane, FaReact } from 'react-icons/fa';
-import { SiTypescript, SiVite } from 'react-icons/si';
+import { SiTypescript, SiVite, SiVuedotjs } from 'react-icons/si';
 import { Mail } from 'lucide-react';
 import contactsData from '../constants/contacts';
 
@@ -53,6 +53,10 @@ const Hero: React.FC = () => {
           <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-300">
             <FaReact size={20} />
             <span>React</span>
+          </div>
+          <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-300">
+            <SiVuedotjs size={20} />
+            <span>Vue.js</span>
           </div>
           <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-300">
             <SiTypescript size={20} />
