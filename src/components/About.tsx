@@ -61,10 +61,10 @@ const About: React.FC = () => {
               <p className="text-green-600 dark:text-green-400">University of Technology • 2016 - 2020</p>
             </div>
 
-            <p className="text-gray-600 dark:text-gray-300">
+            {/* <p className="text-gray-600 dark:text-gray-300">
               When I'm not coding, you can find me exploring new technologies, contributing to
               open-source projects, or enjoying outdoor activities like hiking and photography.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
