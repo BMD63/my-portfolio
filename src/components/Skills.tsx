@@ -5,8 +5,6 @@ import {
   Wrench,
   TestTube,
   Globe,
-  Smartphone,
-  Database,
   Server
 } from 'lucide-react';
 
