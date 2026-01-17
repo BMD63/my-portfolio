@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Github, Linkedin, Mail, Send, MessageCircle } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
+import { Mail, Send, } from 'lucide-react';
 import contactsData from '../constants/contacts';
 
 const Contact: React.FC = () => {
@@ -62,7 +63,7 @@ const Contact: React.FC = () => {
                 rel="noopener noreferrer"
                 className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
-                <Linkedin size={20} className="mr-3" />
+                <FaLinkedin size={20} className="mr-3" />
                 LinkedIn Profile
               </a>
               <a
@@ -71,7 +72,7 @@ const Contact: React.FC = () => {
                 rel="noopener noreferrer"
                 className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
-                <Github size={20} className="mr-3" />
+                <FaGithub size={20} className="mr-3" />
                 GitHub Profile
               </a>
               <a
@@ -80,7 +81,7 @@ const Contact: React.FC = () => {
                 rel="noopener noreferrer"
                 className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
-                <MessageCircle size={20} className="mr-3" />
+                <FaTelegramPlane size={20} className="mr-3" />
                 Telegram
               </a>
             </div>

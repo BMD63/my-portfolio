@@ -1,5 +1,6 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Code, Palette, Zap } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
+import { Mail, Code, Palette, Zap } from 'lucide-react';
 import contactsData from '../constants/contacts';
 
 const Hero: React.FC = () => {
@@ -69,7 +70,7 @@ const Hero: React.FC = () => {
             rel="noopener noreferrer"
             className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
-            <Github size={24} />
+            <FaGithub size={24} />
           </a>
           <a
             href={contactsData.linkedin}
@@ -77,13 +78,19 @@ const Hero: React.FC = () => {
             rel="noopener noreferrer"
             className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
-            <Linkedin size={24} />
+            <FaLinkedin size={24} />
           </a>
           <a
             href={`mailto:${contactsData.mail}`}
             className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
             <Mail size={24} />
+          </a>
+          <a
+            href={`https://t.me/${contactsData.telegram}`}
+            className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          >
+            <FaTelegramPlane size={24} />
           </a>
         </div>
       </div>

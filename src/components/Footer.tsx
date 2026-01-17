@@ -1,5 +1,6 @@
 import React from 'react';
-import { Github, Linkedin, Mail, MessageCircle, Heart } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
+import { Mail, Heart } from 'lucide-react';
 import contactsData from '../constants/contacts';
 
 const Footer: React.FC = () => {
@@ -9,7 +10,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <p className="text-gray-400">
-              © 2024 John Doe. All rights reserved.
+              © 2025 Sergei Chechet. All rights reserved.
             </p>
           </div>
 
@@ -21,7 +22,7 @@ const Footer: React.FC = () => {
               className="text-gray-400 hover:text-white transition-colors"
               aria-label="GitHub"
             >
-              <Github size={20} />
+              <FaGithub size={20} />
             </a>
             <a
               href={contactsData.linkedin}
@@ -30,7 +31,7 @@ const Footer: React.FC = () => {
               className="text-gray-400 hover:text-white transition-colors"
               aria-label="LinkedIn"
             >
-              <Linkedin size={20} />
+              <FaLinkedin size={20} />
             </a>
             <a
               href={`mailto:${contactsData.mail}`}              
@@ -46,7 +47,7 @@ const Footer: React.FC = () => {
               className="text-gray-400 hover:text-white transition-colors"
               aria-label="Telegram"
             >
-              <MessageCircle size={20} />
+              <FaTelegramPlane size={20} />
             </a>
           </div>
         </div>
