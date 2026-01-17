@@ -1,6 +1,7 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
-import { Mail, Code, Palette, Zap } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaTelegramPlane, FaReact } from 'react-icons/fa';
+import { SiTypescript, SiVite } from 'react-icons/si';
+import { Mail } from 'lucide-react';
 import contactsData from '../constants/contacts';
 
 const Hero: React.FC = () => {
@@ -50,15 +51,15 @@ const Hero: React.FC = () => {
 
         <div className="flex justify-center space-x-6 mb-8">
           <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-300">
-            <Code size={20} />
+            <FaReact size={20} />
             <span>React</span>
           </div>
           <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-300">
-            <Palette size={20} />
+            <SiTypescript size={20} />
             <span>TypeScript</span>
           </div>
           <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-300">
-            <Zap size={20} />
+            <SiVite size={20} />
             <span>Vite</span>
           </div>
         </div>
