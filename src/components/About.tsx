@@ -31,22 +31,50 @@ const About: React.FC = () => {
             <div className="space-y-4 mb-6">
               <div className="border-l-4 border-blue-500 pl-4">
                 <h4 className="font-semibold text-gray-900 dark:text-white">
-                  Senior Frontend Developer
+                  Frontend Developer
                 </h4>
-                <p className="text-blue-600 dark:text-blue-400">TechCorp • 2022 - Present</p>
+                <p className="text-blue-600 dark:text-blue-400">Staffjet • 05/2023 - Present</p>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Leading frontend development for enterprise applications, mentoring junior developers,
-                  and implementing modern React architectures.
+                  Developing marketing platform for client campaign management with dashboards, 
+                  filters, and analytics. Building promotional landing pages for major retail brands 
+                  with REST API integration and event tracking. Creating reusable UI components 
+                  and improving UX/stability.
                 </p>
               </div>
+              
               <div className="border-l-4 border-blue-500 pl-4">
                 <h4 className="font-semibold text-gray-900 dark:text-white">
                   Frontend Developer
                 </h4>
-                <p className="text-blue-600 dark:text-blue-400">StartupXYZ • 2020 - 2022</p>
+                <p className="text-blue-600 dark:text-blue-400">Digital Forest Inc • 08/2023 - Present</p>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Developed responsive web applications using Vue.js and React, collaborated with
-                  design teams, and optimized application performance.
+                  Migrating legacy jQuery application to React with TypeScript and Redux. 
+                  Implementing responsive design with Tailwind CSS and optimizing performance 
+                  through code refactoring. Building multi-page website with Next.js routing.
+                </p>
+              </div>
+              
+              <div className="border-l-4 border-blue-500 pl-4">
+                <h4 className="font-semibold text-gray-900 dark:text-white">
+                  Frontend Developer
+                </h4>
+                <p className="text-blue-600 dark:text-blue-400">JS Design Studio • 07/2022 - 06/2023</p>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Developed architectural design studio website from Figma designs with multilingual 
+                  support and SEO optimization. Created landing pages for studio projects in 
+                  collaboration with designers and sales team. Managed hosting and content updates.
+                </p>
+              </div>
+  
+              <div className="border-l-4 border-blue-500 pl-4">
+                <h4 className="font-semibold text-gray-900 dark:text-white">
+                  Frontend Developer
+                </h4>
+                <p className="text-blue-600 dark:text-blue-400">Strategy MA • 07/2021 - 06/2022</p>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Built landing pages from approved designs and enhanced existing company websites. 
+                  Implemented new features according to client specifications and made design 
+                  and logic improvements.
                 </p>
               </div>
             </div>
@@ -56,9 +84,11 @@ const About: React.FC = () => {
             </h3>
             <div className="border-l-4 border-green-500 pl-4 mb-6">
               <h4 className="font-semibold text-gray-900 dark:text-white">
-                Bachelor of Computer Science
+                Bachelor of Radio Engineering
               </h4>
-              <p className="text-green-600 dark:text-green-400">University of Technology • 2016 - 2020</p>
+              <p className="text-green-600 dark:text-green-400">
+                Samara State University • Graduated
+              </p>
             </div>
 
             {/* <p className="text-gray-600 dark:text-gray-300">
