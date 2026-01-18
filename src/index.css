@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* stylelint-disable-next-line */
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {

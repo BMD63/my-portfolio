@@ -13,16 +13,16 @@ const About: React.FC = () => {
         <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-8">
           <div className="prose prose-lg dark:prose-invert max-w-none">
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Hi! I'm a passionate Frontend Developer with over 3 years of experience creating
-              beautiful, responsive, and user-friendly web applications. I love turning complex
-              problems into simple, elegant solutions.
+                Hi! I'm a Frontend Developer with over 3 years of experience specializing in React, Vue, TypeScript, 
+              and modern web technologies. I transform complex business requirements into intuitive, 
+              high-performance applications that users love.
             </p>
 
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              My journey in web development started with a curiosity about how websites work,
-              and it has evolved into a career where I get to build digital experiences that
-              make a difference. I believe in writing clean, maintainable code and staying
-              up-to-date with the latest technologies and best practices.
+              My journey began with curiosity about how websites work and evolved into building solutions 
+              that deliver real impact—from e-commerce platforms processing thousands of transactions 
+              to gamified marketing tools and AI-powered applications. I focus on writing maintainable, 
+              scalable code while staying ahead of industry trends and best practices.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">

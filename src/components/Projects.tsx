@@ -8,7 +8,7 @@ const Projects: React.FC = () => {
   const [typeFilter, setTypeFilter] = useState<'all' | 'pet' | 'commerce'>('all');
   const [visibleProjects, setVisibleProjects] = useState<number>(6);
 
-  const technologies = ['All', 'React', 'Vue', 'TypeScript', 'JavaScript', 'Node.js'];
+  const technologies = ['All', 'React', 'Vue', 'TypeScript', 'JavaScript'];
   const projectTypes = ['all', 'pet', 'commerce'] as const;
 
   const filteredProjects = projectsData.filter(project => {
@@ -105,15 +105,17 @@ const Projects: React.FC = () => {
                     <ExternalLink size={16} className="mr-1" />
                     Live Demo
                   </a>
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors"
-                  >
-                    <FaGithub size={16} className="mr-1" />
-                    Code
-                  </a>
+                  {project.githubUrl &&(
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors"
+                    >
+                      <FaGithub size={16} className="mr-1" />
+                      Code
+                  </a>)}
+                  
                 </div>
               </div>
             </div>

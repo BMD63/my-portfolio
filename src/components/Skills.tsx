@@ -43,7 +43,7 @@ const skillsData: SkillCategory[] = [
   {
     title: 'Other',
     icon: <Globe size={24} />,
-    skills: ['Redux', 'Firebase', 'MongoDB', 'Responsive Design']
+    skills: ['Redux', 'Zustand', 'Pinia', 'Next.JS', 'NUXT','Docker', 'CI/CD']
   }
 ];
 
