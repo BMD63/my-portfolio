@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTelegramPlane, FaReact } from 'react-icons/fa';
-import { SiTypescript, SiVite, SiVuedotjs } from 'react-icons/si';
+import { SiTypescript, SiVuedotjs } from 'react-icons/si';
 import { Mail } from 'lucide-react';
 import contactsData from '../constants/contacts';
 
