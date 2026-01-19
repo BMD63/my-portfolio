@@ -62,10 +62,10 @@ const Hero: React.FC = () => {
             <SiTypescript size={20} />
             <span>TypeScript</span>
           </div>
-          <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-300">
+          {/* <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-300">
             <SiVite size={20} />
             <span>Vite</span>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex justify-center space-x-6">

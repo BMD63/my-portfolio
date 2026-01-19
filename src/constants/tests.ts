@@ -12,41 +12,43 @@ interface Challenge {
 const challengesData: Challenge[] = [
   {
     id: 1,
-    company: 'TechCorp',
-    title: 'Real-time Chat Application',
-    description: 'Build a real-time chat application with WebSocket integration, user authentication, and message persistence.',
-    technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
-    timeSpent: '2 weeks'
+    company: 'Dobry Cofe',
+    title: 'Adaptive User Page',
+    description: `Build a users page in Nuxt.js (SSR mode) with Vuetify, featuring collapsible sidebar, 
+    skeleton loading state, and progressive data fetching. Implement user factory as a plugin and focus 
+    on clean SCSS structure with responsive desktop/mobile layouts.`,
+    technologies: ['Vue 2', 'Nuxt.js', 'Typescript 5.9', 'Vuetify','SCSS', 'Vite 7.2'],
+    githubUrl: 'https://github.com/BMD63/dobryi-coffee.git',
+    // liveUrl: 'https://example.com',
+    timeSpent: '1 day'
   },
   {
     id: 2,
-    company: 'StartupXYZ',
-    title: 'Data Dashboard',
-    description: 'Create an interactive dashboard for visualizing sales data with charts, filters, and export functionality.',
-    technologies: ['Vue', 'D3.js', 'TypeScript', 'Express'],
-    githubUrl: 'https://github.com',
-    timeSpent: '1 week'
+    company: 'NDA Protected Client',
+    title: 'Airline Services E-commerce MVP',
+    description: 'React-based web app for booking additional airline services with interactive cart, real-time price calculation, dark theme toggle, and persistent localStorage state.',
+    technologies: ['React 19.2', 'Tailwind CSS', 'TypeScript 5.9', 'Zustand 5.0', 'Vite 7.2'],
+    githubUrl: 'https://github.com/BMD63/airline-services.git',
+    timeSpent: '1 day'
   },
   {
     id: 3,
-    company: 'DevAgency',
-    title: 'E-commerce Product Page',
-    description: 'Design and implement a responsive product page with image gallery, reviews, and add-to-cart functionality.',
-    technologies: ['React', 'Tailwind CSS', 'Redux'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
-    timeSpent: '3 days'
+    company: 'LUiS+',
+    title: 'Expert Consultation Sticker Component',
+    description: 'TypeScript/Nuxt 4/Vue 3 component featuring two-page layout with strict design adherence, animated sticker navigation, and responsive positioning across devices.',
+    technologies: ['Vue 3', 'SCSS', 'NUXT 4', 'TypeScript 5.9', 'Vite 7.2', 'Zod', ],
+    githubUrl: 'https://github.com/BMD63/sticker-module.git',
+    liveUrl: 'https://https://bmd63.github.io/sticker-module/.com',
+    timeSpent: '2 days'
   },
   {
     id: 4,
-    company: 'CodeChallenge.io',
-    title: 'Algorithm Visualizer',
-    description: 'Build an interactive tool to visualize sorting algorithms with step-by-step execution and performance metrics.',
-    technologies: ['JavaScript', 'HTML5 Canvas', 'CSS'],
-    githubUrl: 'https://github.com',
-    timeSpent: '1 week'
+    company: 'NDA Protected Client',
+    title: 'Jujutsu Monitoring Dashboard',
+    description: 'Build a real-time anomaly tracking dashboard with SSE updates every 5 seconds, optimistic UI updates for spirit captures (30% error rate simulation), cyclic respawn system, Zod validation, and TanStack Query state management following Feature Sliced Design architecture.',
+    technologies: ['React 18', 'Next.js 14', 'SCSS Modules', 'TypeScript 5.9', 'Zod', 'Tanstack Query', 'Docker', 'Vite 7.2'],
+    githubUrl: 'https://github.com/BMD63/Jujutsu-Dashboard.git',
+    timeSpent: '1 day'
   }
 ];
 

@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
 
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-2">
-              {['hero', 'projects', 'challenges', 'skills', 'about', 'contact'].map((section) => (
+              {['hero', 'projects', 'code examples', 'skills', 'about', 'contact'].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
