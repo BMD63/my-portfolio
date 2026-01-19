@@ -13,13 +13,13 @@ const projectsData: Project[] = [
   
   {
     id: 1,
-    title: 'AI Platform',
-    description: 'An AI-powered platform creating digital replicas of professional expertise for forecasting and consultation. Features include risk prediction algorithms, personalized recommendations system, digital consciousness replicas with decision-making logic, 24/7 AI advisory access, and legacy preservation tools for corporate, family, and public use.',
-    image: 'projects/binom.png',
-    technologies: ['React', 'JavaScript', 'Tailwind'],
+    title: 'Architectural Design Studio Website',
+    description: 'A corporate website for an architectural design studio with integrated features. Features include interactive project cost calculator, blog with portfolio showcase, dynamic landing pages system, project gallery with filtering, and client inquiry forms with CRM integration.',
+    image: 'projects/jsds.png',
+    technologies: ['React', 'Tailwind CSS', 'TypeScript'],
     type: 'commerce',
-    liveUrl: 'https://bmd63.github.io/Binom/',
-     },
+    liveUrl: 'jsds.ru',
+  },
   {
     id: 2,
     title: 'Marketing Platform Dashboard',
@@ -48,17 +48,16 @@ const projectsData: Project[] = [
     liveUrl: 'https://bluffs.ru',
     githubUrl: 'https://github.com'
   },
-  
   {
     id: 5,
-    title: 'Architectural Design Studio Website',
-    description: 'A corporate website for an architectural design studio with integrated features. Features include interactive project cost calculator, blog with portfolio showcase, dynamic landing pages system, project gallery with filtering, and client inquiry forms with CRM integration.',
-    image: 'projects/jsds.png',
-    technologies: ['React', 'Tailwind CSS', 'TypeScript'],
+    title: 'AI Platform',
+    description: 'An AI-powered platform creating digital replicas of professional expertise for forecasting and consultation. Features include risk prediction algorithms, personalized recommendations system, digital consciousness replicas with decision-making logic, 24/7 AI advisory access, and legacy preservation tools for corporate, family, and public use.',
+    image: 'projects/binom.png',
+    technologies: ['React', 'JavaScript', 'Tailwind'],
     type: 'commerce',
-    liveUrl: 'jsds.ru',
+    liveUrl: 'https://bmd63.github.io/Binom/',
   },
-    {
+  {
     id: 6,
     title: 'Online Store',
     description: 'An e-commerce platform for POCO smartphones with full shopping functionality. Features include product catalog with filtering and comparison, shopping cart and checkout process, user authentication and order tracking, product reviews and ratings, and integration with payment systems and inventory management.',
@@ -92,7 +91,7 @@ const projectsData: Project[] = [
     description: 'A gamified marketing platform where users learn through interactive challenges and win prizes. Features include task creation system for brands, answer submission and validation, automated prize distribution among correct answers, user engagement tracking, leaderboards, and campaign analytics dashboard.',
     image: 'projects/priz.png',
     technologies: ['React', 'TypeScript', 'API'],
-    type: 'pet',
+    type: 'commerce',
     liveUrl: 'https://prizolove.com/',
   },
 ];
