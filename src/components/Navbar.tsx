@@ -1,11 +1,11 @@
 import React from 'react';
 import { Moon, Sun } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
-import { useLanguage } from '../contexts/LanguageContext';
+// import { useLanguage } from '../contexts/LanguageContext';
 
 const Navbar: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
-  const { language, toggleLanguage } = useLanguage();
+  // const { language, toggleLanguage } = useLanguage();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className="flex items-center space-x-2">
-            <button
+            {/* <button
               onClick={toggleLanguage}
               className="px-4 py-2 rounded-lg !text-gray-700 dark:!text-gray-200 
                        hover:!text-blue-600 dark:hover:!text-blue-400 
@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
               aria-label="Toggle language"
             >
               {language === 'ru' ? 'RU' : 'EN'}
-            </button>
+            </button> */}
             <button
               onClick={toggleTheme}
               className="p-2 rounded-lg !text-gray-700 dark:!text-gray-200 
