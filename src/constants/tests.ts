@@ -38,7 +38,7 @@ const challengesData: Challenge[] = [
     description: 'TypeScript/Nuxt 4/Vue 3 component featuring two-page layout with strict design adherence, animated sticker navigation, and responsive positioning across devices.',
     technologies: ['Vue 3', 'SCSS', 'NUXT 4', 'TypeScript 5.9', 'Vite 7.2', 'Zod', ],
     githubUrl: 'https://github.com/BMD63/sticker-module.git',
-    liveUrl: 'https://https://bmd63.github.io/sticker-module/',
+    liveUrl: 'https://bmd63.github.io/sticker-module/',
     timeSpent: '2 days'
   },
   {
