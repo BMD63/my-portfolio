@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
                 className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
                 <Mail size={20} className="mr-3" />
-                chechet@mail.ru
+                {contactsData.mail}
               </a>
               <a
                 href={contactsData.linkedin}
