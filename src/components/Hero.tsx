@@ -30,8 +30,9 @@ const Hero: React.FC = () => {
         </h1>
 
         <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-          Crafting beautiful, responsive web experiences with modern technologies.
-          Passionate about clean code and user-centered design.
+          I craft scalable web applications with React, Vue, and TypeScript — from complex dashboards to
+          pixel-perfect interfaces.
+          Focused on clean code, performance, and experiences users actually enjoy.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
