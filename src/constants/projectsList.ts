@@ -55,7 +55,7 @@ const projectsData: Project[] = [
     image: 'projects/binom.png',
     technologies: ['React', 'JavaScript', 'Tailwind'],
     type: 'commerce',
-    liveUrl: 'https://bmd63.github.io/Binom/',
+    liveUrl: 'https://www.binom.no/',
   },
   {
     id: 6,
