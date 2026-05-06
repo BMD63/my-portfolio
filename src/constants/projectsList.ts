@@ -18,7 +18,7 @@ const projectsData: Project[] = [
     image: 'projects/jsds.png',
     technologies: ['React', 'Tailwind CSS', 'TypeScript'],
     type: 'commerce',
-    liveUrl: 'jsds.ru',
+    liveUrl: 'https://jsds.ru',
   },
   {
     id: 2,
